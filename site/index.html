@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#fdf5f2">
+<title>Natália Lazari | Beauty Expert — Sobrancelhas, Cílios e Maquiagem</title>
+<meta name="description" content="Design de sobrancelhas, brow lamination, lash lifting e maquiagem para noivas, eventos e ocasiões especiais. Atendimento personalizado e cheio de carinho. Agende pelo WhatsApp.">
+<link rel="icon" href="images/favicon.png">
+<meta property="og:title" content="Natália Lazari | Beauty Expert">
+<meta property="og:description" content="Beleza com delicadeza: sobrancelhas, cílios e maquiagem personalizados para realçar você.">
+<meta property="og:image" content="images/banner.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@1,500&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
+<script>document.documentElement.className='js'</script>
+<style>
+:root{--bg:#fdf5f2;--rose:#c0728a;--text:#3b2530;--mute:#7b6269;--line:rgba(192,114,138,.25);--glass:rgba(255,255,255,.6);--rg:linear-gradient(135deg,#f7c9b6,#eb9fa9 50%,#cc7f94);--h:76px}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:var(--h)}
+body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+body:before{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;background:radial-gradient(60vw 50vh at 88% 6%,rgba(247,201,182,.55),transparent 60%),radial-gradient(55vw 55vh at 4% 92%,rgba(214,181,226,.4),transparent 60%),radial-gradient(40vw 40vh at 50% 50%,rgba(250,215,225,.35),transparent 70%),linear-gradient(rgba(192,114,138,.06) 1px,transparent 1px) 0 0/64px 64px,linear-gradient(90deg,rgba(192,114,138,.06) 1px,transparent 1px) 0 0/64px 64px}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+h1,h2,h3{font-family:'Sora',sans-serif;font-weight:600;line-height:1.08;letter-spacing:-.02em}
+em{font-family:'Playfair Display',serif;font-weight:500;font-style:italic;background:linear-gradient(90deg,#b84a72,#e07a96,#a8426b,#b84a72);-webkit-background-clip:text;background-clip:text;color:transparent;padding-right:.1em}
+main,footer{position:relative;z-index:1}
+#fx{position:fixed;inset:0;z-index:0;pointer-events:none}
+.glow{position:fixed;top:0;left:0;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(235,159,169,.28),transparent 65%);pointer-events:none;z-index:0}
+.wrap{width:min(1180px,90%);margin:auto}
+.kicker{font-size:12px;letter-spacing:.28em;text-transform:uppercase;color:var(--rose);display:flex;align-items:center;gap:10px;margin-bottom:18px}
+.kicker:before{content:"";width:28px;height:1px;background:var(--rose)}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:16px 30px;border-radius:99px;font:600 14px 'DM Sans',sans-serif;background:var(--rg);color:#3a1f27;border:0;cursor:pointer;box-shadow:0 10px 40px -10px rgba(204,127,148,.7);transition:transform .3s,box-shadow .3s;position:relative;overflow:hidden}
+.btn:hover{box-shadow:0 0 0 6px rgba(235,159,169,.2),0 14px 50px -8px rgba(204,127,148,.9)}
+.btn.ghost{background:var(--glass);color:var(--text);border:1px solid var(--line);box-shadow:none;backdrop-filter:blur(10px)}
+:focus-visible{outline:2px solid var(--rose);outline-offset:3px}
+.js .rv{opacity:0;transform:translateY(34px);filter:blur(8px);transition:opacity .9s,transform .9s,filter .9s}
+.js .rv.in{opacity:1;transform:none;filter:none}
+/* loader */
+#loader{position:fixed;inset:0;z-index:999;background:var(--bg);display:grid;place-content:center;justify-items:center;animation:out .7s 3.2s forwards}
+#loader.done{opacity:0;visibility:hidden;transition:.7s}
+#loader img{height:92px;filter:drop-shadow(0 0 26px rgba(232,180,160,.6));animation:pulse 1.6s ease-in-out infinite}
+#loader i{display:block;width:150px;height:2px;margin-top:26px;background:var(--line);overflow:hidden;position:relative}
+#loader i:after{content:"";position:absolute;inset:0;background:var(--rg);transform:translateX(-100%);animation:load 1.8s ease-in-out forwards}
+@keyframes load{to{transform:none}}@keyframes out{to{opacity:0;visibility:hidden}}@keyframes pulse{50%{transform:scale(1.08);opacity:.75}}
+/* header */
+header{position:fixed;top:0;left:0;right:0;z-index:100;height:var(--h);display:flex;align-items:center;backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);background:rgba(253,245,242,.72);border-bottom:1px solid var(--line)}
+nav{display:flex;align-items:center;justify-content:space-between;width:min(1180px,90%);margin:auto}
+.logo{display:flex;align-items:center;gap:12px;font:600 14px 'Sora',sans-serif;letter-spacing:.22em}
+.logo img{height:38px;width:auto}.logo span{color:var(--rose)}
+.links{display:flex;align-items:center;gap:30px;list-style:none;font-size:13px;color:var(--mute)}
+.links a:hover{color:var(--text)}
+.links .btn{padding:11px 22px;font-size:13px;color:#3a1f27}
+.burger{display:none;background:none;border:0;width:44px;height:44px;cursor:pointer;flex-direction:column;justify-content:center;align-items:center;gap:6px}
+.burger span{width:24px;height:2px;background:var(--text)}
+/* hero */
+.hero{min-height:100vh;display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;padding:calc(var(--h) + 40px) 0 60px;width:min(1180px,90%);margin:auto}
+.hero h1{font-size:clamp(36px,4.9vw,66px);font-weight:500;line-height:1.14;margin-bottom:26px}
+.l{display:block;overflow:hidden;padding-bottom:.08em}
+.l>span{display:inline-block;transform:translateY(115%);animation:up 1.1s cubic-bezier(.2,.8,.2,1) forwards;animation-delay:calc(1.5s + var(--d)*.14s)}
+@keyframes up{to{transform:none}}
+.hero p{color:var(--mute);font-size:18px;max-width:520px;margin-bottom:34px}
+.cta{display:flex;gap:14px;flex-wrap:wrap}
+.chips{display:flex;gap:10px;flex-wrap:wrap;margin-top:34px}
+.chip{font-size:12px;padding:8px 14px;border:1px solid var(--line);border-radius:99px;background:var(--glass);color:var(--mute);display:flex;align-items:center;gap:8px}
+.chip:before{content:"";width:6px;height:6px;border-radius:50%;background:var(--rose);box-shadow:0 0 10px var(--rose);animation:blink 2s infinite}
+@keyframes blink{50%{opacity:.3}}
+.scan{position:relative;aspect-ratio:4/5;width:100%;max-width:440px;margin-left:auto;perspective:1000px}
+.frame{position:absolute;inset:0;border-radius:220px 220px 20px 20px;overflow:hidden;border:1px solid var(--line);box-shadow:0 30px 90px -20px rgba(204,127,148,.55);transition:transform .25s ease-out}
+.frame img{width:100%;height:100%;object-fit:cover}
+.line{position:absolute;left:0;right:0;height:90px;top:-90px;background:linear-gradient(transparent,rgba(255,255,255,.55),transparent);border-bottom:1px solid #fff;animation:sweep 4.5s ease-in-out infinite}
+@keyframes sweep{0%{top:-90px}60%,100%{top:100%}}
+.frame svg{position:absolute;inset:0;width:100%;height:100%}
+.pt{fill:#fff;animation:blink 2s infinite}
+.ln{stroke:rgba(255,255,255,.9);stroke-width:.3;fill:none;stroke-dasharray:1.6 1.2}
+.float{position:absolute;padding:10px 16px;border-radius:14px;font-size:12px;background:rgba(255,255,255,.72);border:1px solid var(--line);box-shadow:0 10px 30px -10px rgba(204,127,148,.4);backdrop-filter:blur(12px);animation:fl 6s ease-in-out infinite;z-index:2}
+.float b{color:var(--rose);font-weight:600}
+@keyframes fl{50%{transform:translateY(-10px)}}
+/* palco com rolagem (serviços e mapeamento) */
+.stage{height:calc(var(--n)*85vh + 100vh)}
+.stick{position:sticky;top:0;height:100vh;overflow:hidden;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:30px;width:min(1180px,90%);margin:auto;padding-top:var(--h);--H:min(66vh,600px)}
+.numbig{position:absolute;right:-1%;top:52%;transform:translateY(-50%);font:700 clamp(200px,34vw,460px)/1 'Sora',sans-serif;color:transparent;-webkit-text-stroke:1px rgba(192,114,138,.2);pointer-events:none}
+.deck{position:relative;height:var(--H);perspective:1400px;order:2}
+.card{position:absolute;top:0;bottom:0;left:50%;width:calc(var(--H)*.8);margin-left:calc(var(--H)*-.4);border-radius:22px;overflow:hidden;border:1px solid var(--line);background:#f6dfda;box-shadow:0 30px 70px -20px rgba(160,80,110,.5)}
+.card img{width:100%;height:100%;object-fit:cover}
+.card figcaption{display:none}
+.badge{position:absolute;top:14px;left:14px;z-index:2;font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;padding:7px 12px;border-radius:99px;background:var(--rg);color:#3a1f27}
+.info{position:relative;z-index:2;order:1}
+.info .ix{color:var(--rose);font:600 13px 'Sora',sans-serif;letter-spacing:.24em}
+.info h3{font-size:clamp(32px,4.6vw,60px);margin:12px 0 18px}
+.info p{color:var(--mute);max-width:430px;margin-bottom:28px;font-size:17px}
+.swap{transition:opacity .2s,transform .2s}.swap.out{opacity:0;transform:translateY(14px)}
+.dots{display:flex;gap:8px;margin-top:34px}
+.dots button{width:34px;height:4px;border-radius:2px;border:0;background:var(--line);cursor:pointer;transition:background .3s,width .3s}
+.dots button.on{background:var(--rose);width:52px}
+html:not(.js) .stage{height:auto}html:not(.js) .stick{position:static;height:auto;display:block;overflow:visible;padding:100px 0}
+html:not(.js) .deck{height:auto;display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+html:not(.js) .card{position:relative;width:auto;margin:0;aspect-ratio:4/5}
+html:not(.js) .card figcaption{display:block;position:absolute;left:0;right:0;bottom:0;padding:16px;background:rgba(0,0,0,.6)}
+html:not(.js) .info,html:not(.js) .numbig{display:none}
+/* mapeamento */
+.mapph{position:relative;height:var(--H);aspect-ratio:4/5;margin:auto;border-radius:22px;overflow:hidden;border:1px solid var(--line);box-shadow:0 30px 90px -20px rgba(204,127,148,.5)}
+.mapph img{width:100%;height:100%;object-fit:cover}
+.mapph svg{position:absolute;inset:0;width:100%;height:100%}
+.dr{fill:none;stroke:#fff;stroke-width:.45;stroke-dasharray:1;stroke-dashoffset:1;stroke-linecap:round;opacity:0;filter:drop-shadow(0 0 1.2px #c0728a)}
+.dr.t{stroke:#ffd6e0;stroke-width:.9}
+.bar{position:absolute;left:0;right:0;top:0;height:2px;background:#fff;box-shadow:0 0 18px 4px rgba(255,255,255,.8)}
+.steps{list-style:none;margin-top:26px;display:grid;gap:14px}
+.step{display:flex;gap:16px;padding:18px 20px;border:1px solid var(--line);border-radius:16px;background:var(--glass);opacity:.4;transition:.4s}
+.step.on{opacity:1;background:#fff;border-color:var(--rose);box-shadow:0 0 40px -12px rgba(204,127,148,.6)}
+.step b{font:600 22px 'Sora',sans-serif;color:var(--rose)}
+.step h3{font-size:18px;margin-bottom:4px}.step p{font-size:14px;color:var(--mute)}
+.mapt h2{font-size:clamp(32px,4.4vw,56px)}
+/* seções comuns */
+.sec{padding:120px 0}
+.about{display:grid;grid-template-columns:.9fr 1fr;gap:70px;align-items:center}
+.about .pic{position:relative;border-radius:22px;overflow:hidden;border:1px solid var(--line);aspect-ratio:4/5;max-width:460px}
+.about .pic img{width:100%;height:100%;object-fit:cover}
+.about h2,.sec h2{font-size:clamp(32px,4.6vw,58px);margin-bottom:22px}
+.about p{color:var(--mute);margin-bottom:16px;font-size:17px}
+.mq{overflow:hidden;margin-top:46px;-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
+.tr{display:flex;gap:20px;width:max-content}
+.js .tr{animation:mq 50s linear infinite}.mq:hover .tr{animation-play-state:paused}
+@keyframes mq{to{transform:translateX(calc(-50% - 10px))}}
+html:not(.js) .mq{overflow-x:auto}
+.rev{flex:0 0 auto;width:440px;border-radius:16px;overflow:hidden;border:1px solid var(--line);box-shadow:0 14px 40px -14px rgba(204,127,148,.5)}
+.rev img{width:100%;height:auto}
+.center{text-align:center}.center .kicker{justify-content:center}
+.more{text-align:center;margin-top:40px}.more p{color:var(--mute);margin-bottom:18px}
+.final{padding:90px 40px;border:1px solid var(--line);border-radius:32px;background:radial-gradient(70% 120% at 50% 0,rgba(247,201,182,.55),transparent 70%),var(--glass);backdrop-filter:blur(14px);text-align:center}
+.final p{color:var(--mute);max-width:520px;margin:0 auto 32px;font-size:17px}
+.final .cta{justify-content:center}
+footer{padding:60px 0 40px;text-align:center;border-top:1px solid var(--line);color:var(--mute);font-size:13px}
+footer img{height:120px;width:auto;margin:0 auto 14px}
+/* assistente */
+.fab{position:fixed;right:20px;bottom:20px;z-index:150;padding:14px 22px;border-radius:99px;border:1px solid var(--line);background:rgba(255,255,255,.85);backdrop-filter:blur(14px);color:var(--text);font:600 14px 'DM Sans',sans-serif;cursor:pointer;display:flex;gap:10px;align-items:center;box-shadow:0 10px 30px -6px rgba(204,127,148,.6)}
+.fab span{color:var(--rose);font-size:18px;animation:blink 2.4s infinite}
+.ai{position:fixed;right:20px;bottom:84px;z-index:150;width:min(370px,calc(100vw - 40px));border-radius:22px;border:1px solid var(--line);background:rgba(255,250,248,.95);backdrop-filter:blur(20px);box-shadow:0 30px 80px -10px rgba(160,80,110,.45);overflow:hidden}
+.ai[hidden]{display:none}
+.ai-h{display:flex;justify-content:space-between;align-items:center;padding:14px 18px;border-bottom:1px solid var(--line);font:600 14px 'Sora',sans-serif}
+.ai-h button{background:none;border:0;color:var(--mute);font-size:22px;cursor:pointer}
+.ai-m{height:240px;overflow:auto;padding:16px;display:flex;flex-direction:column;gap:10px}
+.bub{max-width:86%;padding:10px 14px;border-radius:16px 16px 16px 4px;background:var(--glass);border:1px solid var(--line);font-size:14px;animation:up2 .4s}
+.bub.me{align-self:flex-end;border-radius:16px 16px 4px 16px;background:var(--rg);color:#3a1f27;border:0}
+@keyframes up2{from{opacity:0;transform:translateY(8px)}}
+.ai-c{display:flex;flex-wrap:wrap;gap:8px;padding:0 16px 14px}
+.opt{padding:9px 14px;border-radius:99px;border:1px solid var(--rose);background:none;color:var(--rose);font:500 13px 'DM Sans',sans-serif;cursor:pointer}
+.opt:hover{background:var(--rose);color:#fff}
+.ai-c .btn{padding:11px 18px;font-size:13px}
+.ai small{display:block;padding:0 16px 14px;color:var(--mute);font-size:11px}
+
+
+/* pontos interativos na foto */
+.hot{position:absolute;width:36px;height:36px;margin:-18px 0 0 -18px;border-radius:50%;border:0;background:rgba(255,255,255,.4);-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px);cursor:pointer;z-index:3;display:grid;place-items:center;transition:transform .3s}
+.hot:hover{transform:scale(1.2)}
+.hot i{width:11px;height:11px;border-radius:50%;background:#fff;box-shadow:0 0 0 0 rgba(255,255,255,.9);animation:ping 2s infinite}
+@keyframes ping{70%{box-shadow:0 0 0 18px rgba(255,255,255,0)}100%{box-shadow:0 0 0 0 rgba(255,255,255,0)}}
+.hot span{position:absolute;left:50%;top:calc(100% + 8px);transform:translate(-50%,6px);white-space:nowrap;font:600 12px 'DM Sans',sans-serif;padding:7px 13px;border-radius:99px;background:#fff;color:var(--text);box-shadow:0 8px 20px -8px rgba(160,80,110,.6);opacity:0;pointer-events:none;transition:.3s}
+.hot:hover span,.hot:focus-visible span,.hot.on span{opacity:1;transform:translate(-50%,0)}
+.hint{position:absolute;left:50%;bottom:-38px;transform:translateX(-50%);white-space:nowrap;font-size:12px;color:var(--mute);padding:7px 14px;border-radius:99px;background:var(--glass);border:1px solid var(--line)}
+@media(max-width:900px){.hint{bottom:-34px}.scan{margin-bottom:34px}}
+/* + animações e interação */
+@keyframes shine{to{background-position:200% 0}}
+em{background-size:200% 100%;animation:shine 5s linear infinite}
+.bar0{position:fixed;top:0;left:0;height:3px;width:100%;background:var(--rg);transform-origin:0 50%;transform:scaleX(0);z-index:200}
+.cur{position:fixed;top:0;left:0;width:38px;height:38px;margin:-19px 0 0 -19px;border:1.5px solid var(--rose);border-radius:50%;pointer-events:none;z-index:300;transition:width .25s,height .25s,margin .25s,background .25s;mix-blend-mode:multiply}
+.cur.big{width:70px;height:70px;margin:-35px 0 0 -35px;background:rgba(235,159,169,.25)}
+@media(hover:none){.cur{display:none}}
+.spk{position:fixed;z-index:400;pointer-events:none;color:var(--rose);font-size:16px;animation:spk .9s ease-out forwards}
+@keyframes spk{to{transform:translate(var(--x),var(--y)) rotate(200deg) scale(.2);opacity:0}}
+.petal{position:absolute;color:var(--rose);opacity:.55;pointer-events:none;animation:drift 9s ease-in-out infinite}
+@keyframes drift{50%{transform:translate(18px,-26px) rotate(40deg)}}
+.rib{overflow:hidden;white-space:nowrap;padding:26px 0;border-block:1px solid var(--line);background:var(--glass);backdrop-filter:blur(8px)}
+.rib div{display:inline-block;font:700 clamp(30px,5vw,60px) 'Sora',sans-serif;color:transparent;-webkit-text-stroke:1px var(--rose);animation:mq2 28s linear infinite}
+.rib b{color:var(--rose);-webkit-text-stroke:0;margin:0 .5em}
+@keyframes mq2{to{transform:translateX(-50%)}}
+.hud{position:absolute;left:12px;bottom:12px;font:600 11px 'Sora',sans-serif;letter-spacing:.14em;color:#fff;background:rgba(192,114,138,.7);padding:6px 10px;border-radius:99px;z-index:3}
+.lens{position:absolute;width:120px;height:120px;margin:-60px 0 0 -60px;border-radius:50%;border:1.5px solid #fff;box-shadow:0 0 0 999px rgba(120,50,80,.18),0 0 30px rgba(255,255,255,.8);pointer-events:none;opacity:0;transition:opacity .3s;z-index:2}
+.mapph:hover .lens{opacity:1}
+.card{cursor:pointer}.card:hover img{filter:saturate(1.15)}
+.bub.typing{display:flex;gap:4px;width:54px}.bub.typing i{width:7px;height:7px;border-radius:50%;background:var(--rose);animation:blink 1s infinite}.bub.typing i:nth-child(2){animation-delay:.2s}.bub.typing i:nth-child(3){animation-delay:.4s}
+.chip,.step,.rev{transition:transform .3s,box-shadow .3s}.chip:hover{transform:translateY(-3px);box-shadow:0 8px 20px -8px rgba(204,127,148,.6)}
+[data-tilt]{transition:transform .25s ease-out;will-change:transform}
+@media(max-width:900px){
+.hero{grid-template-columns:1fr;padding-top:calc(var(--h) + 24px)}.scan{margin:10px auto 0;max-width:330px}
+.stick{grid-template-columns:1fr;align-content:center;gap:6px;--H:min(42vh,380px)}.deck{order:1}.info{order:2;text-align:center}.info p{margin:0 auto 18px;font-size:15px}.info h3{margin:6px 0 10px}.dots{justify-content:center;margin-top:18px}
+.numbig{display:none}
+.mapt{order:2;text-align:center}.mapt .kicker{justify-content:center}.step:not(.on){display:none}.steps{margin-top:14px}
+.about{grid-template-columns:1fr;gap:34px}.sec{padding:80px 0}.rev{width:330px}
+.burger{display:flex}.links{position:absolute;top:var(--h);left:0;right:0;flex-direction:column;background:rgba(253,245,242,.98);padding:26px;display:none;gap:22px}.links.open{display:flex}
+.final{padding:60px 22px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}.js .tr{animation:none}.js .mq{overflow-x:auto}}
+</style>
+</head>
+<body>
+<div class="bar0" id="bar0" aria-hidden="true"></div><div class="cur" id="cur" aria-hidden="true"></div>
+<div id="loader" aria-hidden="true"><img src="images/logo-simbolo.png" alt=""><i></i></div>
+<canvas id="fx" aria-hidden="true"></canvas><div class="glow" aria-hidden="true"></div>
+
+<header><nav aria-label="Menu principal">
+<a href="#inicio" class="logo" aria-label="Natália Lazari, início"><img src="images/logo-simbolo.png" alt="" width="27" height="38">NATÁLIA <span>LAZARI</span></a>
+<button class="burger" id="bg" aria-label="Abrir menu" aria-expanded="false" aria-controls="links"><span></span><span></span></button>
+<ul class="links" id="links">
+<li><a href="#servicos">Serviços</a></li><li><a href="#sobre">Sobre</a></li><li><a href="#avaliacoes">Avaliações</a></li>
+<li><a class="btn" href="#contato">Agendar</a></li></ul>
+</nav></header>
+
+<main>
+<section class="hero" id="inicio" aria-labelledby="h1">
+<div>
+<div class="kicker">Natália Lazari • Beauty Expert</div>
+<h1 id="h1"><span class="l"><span style="--d:0">Sua beleza,</span></span><span class="l"><span style="--d:1">com um toque de</span></span><span class="l"><span style="--d:2"><em>delicadeza.</em></span></span></h1>
+<p>Sobrancelhas, cílios e maquiagem para noivas, eventos e momentos especiais — com carinho em cada detalhe para realçar o que você tem de mais bonito.</p>
+<div class="cta"><a class="btn" href="https://wa.me/5534998066436?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio." target="_blank" rel="noopener noreferrer">Agendar no WhatsApp</a><a class="btn ghost" href="#servicos">Ver serviços ↓</a></div>
+<div class="chips"><span class="chip">Resultado natural</span><span class="chip">Cuidado e delicadeza</span><span class="chip">Atendimento personalizado</span></div>
+</div>
+<div class="scan"><span class="petal" style="top:-6%;right:6%">✦</span><span class="petal" style="bottom:2%;left:-8%;animation-delay:-3s;font-size:22px">❀</span><span class="petal" style="top:46%;right:-8%;animation-delay:-5s">✧</span>
+<div class="frame">
+<img src="images/banner.jpg" alt="Resultado de maquiagem e design de sobrancelhas" width="960" height="1200" fetchpriority="high">
+<button class="hot" style="left:34%;top:39%" data-go="1" aria-label="Sobrancelhas: ver o serviço"><i></i><span>Sobrancelhas</span></button>
+<button class="hot" style="left:54%;top:35.5%" data-go="4" aria-label="Cílios: ver o serviço"><i></i><span>Cílios</span></button>
+<button class="hot" style="left:56%;top:55%" data-go="5" aria-label="Maquiagem: ver o serviço"><i></i><span>Maquiagem</span></button>
+</div>
+<div class="hint">✦ Toque nos pontos e conheça cada serviço</div>
+</div>
+</section>
+
+<!-- SERVIÇOS: palco que muda conforme a rolagem -->
+<section class="stage" id="servicos" aria-label="Serviços">
+<div class="stick">
+<div class="numbig" aria-hidden="true">01</div>
+<div class="info"><div class="swap"><div class="ix">01 / 07</div><h3>Maquiagem de Noivas</h3><p>Maquiagem delicada e duradoura para o dia mais importante, para você chegar ao altar segura e radiante.</p><a class="btn" id="sbtn" href="#contato" target="_blank" rel="noopener noreferrer">Quero agendar</a></div><div class="dots" role="group" aria-label="Escolher serviço"></div></div>
+<div class="deck">
+<figure class="card" data-t="Maquiagem de Noivas" data-d="Maquiagem delicada e duradoura para o dia mais importante, para você chegar ao altar segura e radiante." data-m="Olá! Gostaria de agendar Maquiagem de Noivas." data-b="Quero agendar"><span class="badge">★ Destaque</span><img src="images/noivas.jpg" alt="Resultado de maquiagem de noivas" width="800" height="1000"><figcaption>Maquiagem de Noivas</figcaption></figure>
+<figure class="card" data-t="Design de Sobrancelhas" data-d="Modelagem personalizada que respeita o formato do rosto e valoriza a beleza natural do olhar." data-m="Olá! Gostaria de agendar Design de Sobrancelhas." data-b="Quero agendar"><span class="badge">★ Destaque</span><img src="images/design-sobrancelha.jpg" alt="Resultado de design de sobrancelhas" width="800" height="1000" loading="lazy"><figcaption>Design de Sobrancelhas</figcaption></figure>
+<figure class="card" data-t="Maquiagem para Eventos" data-d="Maquiagem profissional com acabamento impecável para você se sentir ainda mais confiante e bonita." data-m="Olá! Gostaria de agendar Maquiagem para Eventos." data-b="Quero agendar"><img src="images/eventos.jpg" alt="Resultado de maquiagem para eventos" width="800" height="1000" loading="lazy"><figcaption>Maquiagem para Eventos</figcaption></figure>
+<figure class="card" data-t="Brow Lamination" data-d="Alinhamento dos fios para sobrancelhas mais volumosas, preenchidas e com efeito natural." data-m="Olá! Gostaria de agendar Brow Lamination." data-b="Quero agendar"><img src="images/brow-lamination.jpg" alt="Resultado de brow lamination" width="800" height="1000" loading="lazy"><figcaption>Brow Lamination</figcaption></figure>
+<figure class="card" data-t="Lash Lifting" data-d="Curvatura e levantamento dos cílios naturais para um olhar mais aberto, marcante e sem exageros." data-m="Olá! Gostaria de agendar Lash Lifting." data-b="Quero agendar"><img src="images/lash-lifting.jpg" alt="Resultado de lash lifting" width="800" height="1000" loading="lazy"><figcaption>Lash Lifting</figcaption></figure>
+<figure class="card" data-t="Maquiagem Social" data-d="Produção elegante e personalizada para ocasiões especiais, festas e momentos inesquecíveis." data-m="Olá! Gostaria de agendar Maquiagem Social." data-b="Quero agendar"><img src="images/social.jpg" alt="Resultado de maquiagem social" width="800" height="1000" loading="lazy"><figcaption>Maquiagem Social</figcaption></figure>
+<figure class="card" data-t="Consultar mais serviços" data-d="Procurando outro procedimento? Fale comigo pelo WhatsApp e conheça todas as opções disponíveis para você." data-m="Olá! Gostaria de consultar mais serviços." data-b="Consultar pelo WhatsApp"><img src="images/mais-servicos.jpg" alt="Símbolo da marca Natália Lazari" width="800" height="1000" loading="lazy"><figcaption>Consultar mais serviços</figcaption></figure>
+</div>
+</div>
+</section>
+
+<section class="sec wrap" id="sobre" aria-labelledby="st">
+<div class="about">
+<div class="pic rv" data-tilt="8"><img src="images/profissional.jpg" alt="Natália Lazari, designer de sobrancelhas e maquiadora" width="860" height="1075" loading="lazy"></div>
+<div class="rv"><div class="kicker">Um pouco sobre mim</div><h2 id="st">Cuidar da sua beleza é a minha <em>paixão.</em></h2>
+<p>Olá! Seja muito bem-vinda ao meu espaço. Sou especialista em design de sobrancelhas e maquiagem, e trabalho com técnicas que respeitam a beleza individual de cada cliente.</p>
+<p>Meu objetivo é proporcionar uma experiência única, com cuidado, delicadeza e resultados que elevam sua autoestima.</p>
+<div class="chips"><span class="chip">Cuidado e delicadeza</span><span class="chip">Beleza individual</span><span class="chip">Autoestima</span></div></div>
+</div>
+</section>
+
+<section class="sec" id="avaliacoes" aria-labelledby="at">
+<div class="wrap center rv"><div class="kicker">Carinho de quem confia</div><h2 id="at">Quem passa por aqui, <em>recomenda.</em></h2></div>
+<div class="mq"><div class="tr" id="tr">
+<figure class="rev"><img src="images/avaliacao1.jpg" alt="Avaliação de 5 estrelas de Poliane de Castro no Google: Excelente profissional, espaço aconchegante e de qualidade." width="1000" height="405" loading="lazy"></figure>
+<figure class="rev"><img src="images/avaliacao2.jpg" alt="Avaliação de Vanessa Caixeta no Google: Uma excelente profissional, muito educada, divertida e alegre. Faz você se sentir extremamente confortável. Muito obrigada." width="1000" height="405" loading="lazy"></figure>
+<figure class="rev"><img src="images/avaliacao3.jpg" alt="Avaliação de 5 estrelas de Eliane Dos Reis Moreira Martins Marcato no Google: Maravilhoso! Local muito agradável! Uma profissional muito meiga e atenciosa e de uma leveza sem igual. Atendimento 1000!" width="1000" height="405" loading="lazy"></figure>
+<figure class="rev"><img src="images/avaliacao4.jpg" alt="Avaliação de 5 estrelas de Joice Rodrigues no Google: Sempre bem atendida, ela é uma profissional excelente, confio de olhos fechados, atenciosa, educada, um amor de pessoa, super indico!" width="1000" height="405" loading="lazy"></figure>
+<figure class="rev"><img src="images/avaliacao5.jpg" alt="Avaliação de 5 estrelas de Pamela Cristina Menezes no Google: Além do trabalho impecável o ambiente é muito agradável, e claro não posso esquecer do profissionalismo único da Natália." width="1000" height="405" loading="lazy"></figure>
+</div></div>
+<div class="more wrap"><p>Quer ver mais avaliações de quem já passou por aqui?<br>Veja todas direto no Google Maps.</p><a class="btn ghost" href="https://maps.app.goo.gl/AVkZKUFNKV2RhzVh8" target="_blank" rel="noopener noreferrer">Ver mais avaliações no Google Maps</a></div>
+</section>
+
+<section class="sec wrap" id="contato" aria-labelledby="ct">
+<div class="final rv" data-tilt="3"><div class="kicker" style="justify-content:center">Seu momento de cuidado</div><h2 id="ct">Vamos desenhar o seu <em>olhar?</em></h2>
+<p>Agende seu horário para design de sobrancelhas, cílios ou maquiagem. Será um prazer receber você!</p>
+<div class="cta"><a class="btn" href="https://wa.me/5534998066436?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio." target="_blank" rel="noopener noreferrer">Agendar pelo WhatsApp</a><a class="btn ghost" href="https://maps.app.goo.gl/AVkZKUFNKV2RhzVh8" target="_blank" rel="noopener noreferrer">Ver no Google Maps</a></div></div>
+</section>
+</main>
+
+<footer><img src="images/logo-completo.png" alt="Natália Lazari Beauty Studio" width="125" height="120" loading="lazy"><p>Beleza natural, cuidado e autoestima.</p><p style="margin-top:18px">© <span id="yr">2026</span> Natália Lazari. Todos os direitos reservados.</p><p style="opacity:.6;font-size:11px">Desenvolvido com carinho.</p></footer>
+
+<button class="fab" id="fab" aria-expanded="false" aria-controls="ai"><span>✦</span> Assistente</button>
+<div class="ai" id="ai" role="dialog" aria-label="Assistente virtual" hidden>
+<div class="ai-h"><span>✦ Assistente da Natália</span><button id="aix" aria-label="Fechar assistente">×</button></div>
+<div class="ai-m" id="aim" aria-live="polite"></div><div class="ai-c" id="aic"></div>
+<small>Assistente virtual com sugestões automáticas. A Natália confirma tudo pelo WhatsApp.</small></div>
+
+<script>
+const $=(s,r=document)=>r.querySelector(s),$$=(s,r=document)=>[...r.querySelectorAll(s)],cl=(v,a,b)=>Math.min(b,Math.max(a,v)),ofs=e=>e.getBoundingClientRect().top+scrollY,
+WA='https://wa.me/5534998066436?text=',red=matchMedia('(prefers-reduced-motion: reduce)').matches;
+/* abertura */
+addEventListener('load',()=>setTimeout(()=>$('#loader').classList.add('done'),900));setTimeout(()=>$('#loader').classList.add('done'),3500);
+$('#yr').textContent=new Date().getFullYear();
+/* menu */
+const bg=$('#bg'),lk=$('#links');bg.onclick=()=>{const o=lk.classList.toggle('open');bg.setAttribute('aria-expanded',o)};
+$$('a',lk).forEach(a=>a.onclick=()=>{lk.classList.remove('open');bg.setAttribute('aria-expanded',false)});
+/* aparecer ao rolar */
+if('IntersectionObserver'in window){const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.15});$$('.rv').forEach(e=>io.observe(e))}else $$('.rv').forEach(e=>e.classList.add('in'));
+/* avaliações passando */
+(()=>{const t=$('#tr');if(red)return;$$('.rev',t).forEach(c=>{const k=c.cloneNode(true);k.setAttribute('aria-hidden','true');t.append(k)})})();
+/* brilho do mouse + inclinação do rosto */
+const gl=$('.glow'),fr=$('.frame');
+addEventListener('pointermove',e=>{if(e.pointerType!=='mouse')return;gl.style.transform=`translate3d(${e.clientX-250}px,${e.clientY-250}px,0)`});
+$('.hero').addEventListener('pointermove',e=>{if(e.pointerType!=='mouse'||red)return;const r=fr.getBoundingClientRect(),x=cl((e.clientX-r.left)/r.width-.5,-1,1),y=cl((e.clientY-r.top)/r.height-.5,-1,1);fr.style.transform=`rotateY(${x*10}deg) rotateX(${-y*10}deg)`});
+$('.hero').addEventListener('pointerleave',()=>fr.style.transform='');
+/* rede neural de partículas */
+(()=>{if(red)return;const c=$('#fx'),x=c.getContext('2d'),m={x:-999,y:-999};let w,h,P=[];
+const rs=()=>{w=c.width=innerWidth;h=c.height=innerHeight;P=Array.from({length:Math.min(80,w/18|0)},()=>({x:Math.random()*w,y:Math.random()*h,vx:(Math.random()-.5)*.3,vy:(Math.random()-.5)*.3}))};
+rs();addEventListener('resize',rs);addEventListener('pointermove',e=>{m.x=e.clientX;m.y=e.clientY});
+(function f(){x.clearRect(0,0,w,h);for(const p of P){p.x+=p.vx;p.y+=p.vy;if(p.x<0||p.x>w)p.vx*=-1;if(p.y<0||p.y>h)p.vy*=-1;const dx=p.x-m.x,dy=p.y-m.y,d=Math.hypot(dx,dy)||1;if(d<140){p.x+=dx/d*.7;p.y+=dy/d*.7}x.fillStyle='rgba(192,114,138,.75)';x.fillRect(p.x,p.y,1.7,1.7)}
+for(let i=0;i<P.length;i++)for(let j=i+1;j<P.length;j++){const a=P[i],b=P[j],d=Math.hypot(a.x-b.x,a.y-b.y);if(d<120){x.strokeStyle=`rgba(192,114,138,${.22*(1-d/120)})`;x.beginPath();x.moveTo(a.x,a.y);x.lineTo(b.x,b.y);x.stroke()}}
+if(!document.hidden)requestAnimationFrame(f);else setTimeout(f,500)})()})();
+/* palcos guiados pela rolagem */
+const st=$('#servicos'),cs=$$('.card',st),N=cs.length,sw=$('.swap',st),nb=$('.numbig',st),bt=$('#sbtn'),dt=$('.dots',st);
+st.style.setProperty('--n',N-1);
+let cur=0,shown=0;
+const dots=cs.map((c,i)=>{const b=document.createElement('button');b.setAttribute('aria-label',c.dataset.t);b.onclick=()=>scrollTo({top:ofs(st)+i*innerHeight*.85,behavior:red?'auto':'smooth'});dt.append(b);return b});
+dots[0].classList.add('on');bt.href=WA+encodeURIComponent(cs[0].dataset.m);
+function show(i){shown=i;const c=cs[i].dataset;sw.classList.add('out');setTimeout(()=>{$('h3',sw).textContent=c.t;$('p',sw).textContent=c.d;bt.textContent=c.b;bt.href=WA+encodeURIComponent(c.m);$('.ix',sw).textContent=String(i+1).padStart(2,'0')+' / '+String(N).padStart(2,'0');nb.textContent=String(i+1).padStart(2,'0');sw.classList.remove('out')},180);dots.forEach((d,k)=>d.classList.toggle('on',k==i))}
+(function loop(){const vh=innerHeight,y=scrollY;
+if(y>ofs(st)-vh&&y<ofs(st)+st.offsetHeight){const tg=cl((y-ofs(st))/(vh*.85),0,N-1);cur+=(tg-cur)*.14;
+cs.forEach((c,i)=>{const d=i-cur,a=Math.abs(d);c.style.transform=`translate3d(${d*54}%,0,${-a*170}px) rotateY(${-d*30}deg) scale(${1-Math.min(a,3)*.08})`;c.style.opacity=cl(1-a*.72,0,1);c.style.zIndex=50-Math.round(a*10)});
+const r=Math.round(cur);if(r!==shown)show(r)}
+requestAnimationFrame(loop)})();
+/* assistente virtual (roteirizado) */
+const R={noiva:['Maquiagem de Noivas','Maquiagem delicada e duradoura para o grande dia.'],design:['Design de Sobrancelhas','Modelagem personalizada que respeita o formato do seu rosto.'],brow:['Brow Lamination','Alinha os fios para sobrancelhas mais volumosas e preenchidas.'],lash:['Lash Lifting','Curva e levanta os cílios naturais para um olhar mais aberto.'],evento:['Maquiagem para Eventos','Acabamento impecável para você brilhar do início ao fim.'],social:['Maquiagem Social','Produção elegante para festas e ocasiões especiais.'],mais:['Consultar mais serviços','Conte o que você procura e a Natália indica o melhor caminho.']},
+T={s:['Oi! Eu sou a assistente virtual da Natália ✦ O que você procura hoje?',[['Realçar o olhar','o'],['Um dia especial','d'],['Maquiagem para festa','f'],['Ver todos os serviços','=mais']]],
+o:['Prefere cuidar das sobrancelhas ou dos cílios?',[['Sobrancelhas','b'],['Cílios','=lash']]],
+b:['Quer definir o formato ou ganhar volume e alinhamento?',[['Definir o formato','=design'],['Volume e alinhamento','=brow']]],
+d:['É o seu casamento?',[['Sim, sou a noiva','=noiva'],['É outra ocasião','=evento']]],
+f:['É um evento marcante ou uma produção mais social?',[['Evento marcante','=evento'],['Produção social','=social']]]},
+am=$('#aim'),ac=$('#aic'),fab=$('#fab'),ai=$('#ai');let started=0;
+var say=function(t,me){const d=document.createElement('div');d.className='bub'+(me?' me':'');d.textContent=t;am.append(d);am.scrollTop=am.scrollHeight}
+function go(k){ac.innerHTML='';
+if(k[0]=='='){const [n,t]=R[k.slice(1)];setTimeout(()=>{say('Minha sugestão: '+n+'. '+t);const a=document.createElement('a');a.className='btn';a.target='_blank';a.rel='noopener noreferrer';a.href=WA+encodeURIComponent(k=='=mais'?'Olá! Gostaria de consultar mais serviços.':'Olá! Gostaria de agendar '+n+'.');a.textContent='Falar no WhatsApp';const b=document.createElement('button');b.className='btn ghost';b.textContent='Recomeçar';b.onclick=()=>{am.innerHTML='';go('s')};ac.append(a,b)},450);return}
+const [q,o]=T[k];setTimeout(()=>{say(q);o.forEach(([l,n])=>{const b=document.createElement('button');b.className='opt';b.textContent=l;b.onclick=()=>{say(l,1);go(n)};ac.append(b)})},k=='s'?0:450)}
+function tog(o){ai.hidden=!o;fab.setAttribute('aria-expanded',o);if(o&&!started){started=1;go('s')}}
+fab.onclick=()=>tog(ai.hidden);$('#aix').onclick=()=>{tog(false);fab.focus()};
+addEventListener('keydown',e=>{if(e.key==='Escape'&&!ai.hidden)tog(false)});
+
+/* + interação */
+const bar0=$('#bar0'),cu=$('#cur'),fine=matchMedia('(hover:hover)').matches;
+addEventListener('scroll',()=>bar0.style.transform=`scaleX(${scrollY/(document.documentElement.scrollHeight-innerHeight||1)})`,{passive:true});
+if(fine){addEventListener('pointermove',e=>{cu.style.transform=`translate(${e.clientX}px,${e.clientY}px)`});
+document.addEventListener('pointerover',e=>cu.classList.toggle('big',!!e.target.closest('a,button,.card,.hot,[data-tilt]')));
+/* botões magnéticos */
+$$('.btn,.fab').forEach(b=>{b.addEventListener('pointermove',e=>{const r=b.getBoundingClientRect();b.style.transform=`translate(${(e.clientX-r.left-r.width/2)*.22}px,${(e.clientY-r.top-r.height/2)*.35}px)`});b.addEventListener('pointerleave',()=>b.style.transform='')});
+/* inclinar fotos */
+if(!red)$$('[data-tilt]').forEach(el=>{const m=+el.dataset.tilt;el.addEventListener('pointermove',e=>{const r=el.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;el.style.transform=`perspective(900px) rotateY(${x*m}deg) rotateX(${-y*m}deg)`});el.addEventListener('pointerleave',()=>el.style.transform='')});
+}
+/* brilhos ao clicar */
+document.addEventListener('click',e=>{if(red||!e.target.closest('.btn,.opt,.fab,.card'))return;for(let i=0;i<9;i++){const s=document.createElement('span');s.className='spk';s.textContent=['✦','✧','❀'][i%3];const a=Math.random()*6.28,d=40+Math.random()*50;s.style.cssText=`left:${e.clientX}px;top:${e.clientY}px;--x:${Math.cos(a)*d}px;--y:${Math.sin(a)*d}px`;document.body.append(s);setTimeout(()=>s.remove(),900)}});
+/* clicar num card leva até ele */
+cs.forEach((c,i)=>c.addEventListener('click',()=>{if(i!==shown)scrollTo({top:ofs(st)+i*innerHeight*.85,behavior:red?'auto':'smooth'})}));
+/* assistente digitando */
+const _say=say;say=function(t,me){if(me)return _say(t,me);const d=document.createElement('div');d.className='bub typing';d.innerHTML='<i></i><i></i><i></i>';am.append(d);am.scrollTop=am.scrollHeight;setTimeout(()=>{d.remove();_say(t)},550)};
+/* pontos da foto: mostram o nome sozinhos e levam ao serviço */
+const hots=$$('.hot');let hi=0,hu=0;
+hots.forEach((b,k)=>{b.addEventListener('click',()=>{scrollTo({top:ofs(st)+(+b.dataset.go)*innerHeight*.85,behavior:red?'auto':'smooth'})});b.addEventListener('pointerenter',()=>{hu=1;hots.forEach(x=>x.classList.remove('on'))})});
+if(!red)setInterval(()=>{if(hu)return;hots.forEach((b,k)=>b.classList.toggle('on',k==hi));hi=(hi+1)%hots.length},2200);
+</script>
+</body>
+</html>
